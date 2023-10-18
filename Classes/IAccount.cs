@@ -3,7 +3,7 @@
     public interface IAccount
     {
         int UserAccountOwner { get; set; }
-        string AccountNumber { get; }
+        int AccountNumber { get; }
         double Balance { get; set; }
     }
 

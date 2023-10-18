@@ -31,7 +31,7 @@ public partial class RegisterWindow : Window
         User newUser = new Client(username, password);
         // userManager.AddUser(newUser);
         MessageBox.Show("Registration successful. You can now log in.");
-        UserManager.users.Add(newUser);
+        UserManager.Users.Add(newUser);
 
         MainWindow mainWindow = new MainWindow();
         mainWindow.Show();

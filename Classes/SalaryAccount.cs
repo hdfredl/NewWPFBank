@@ -1,16 +1,21 @@
-﻿namespace NewWPFBank.Classes
+﻿using System;
+
+namespace NewWPFBank.Classes
 {
     public class SalaryAccount : IAccount
     {
         public double Balance { get; set; }
-        public string AccountNumber { get; set; }
+        public int AccountNumber { get; set; }
         public int UserAccountOwner { get; set; }
 
-        public SalaryAccount(string accountNumber, double consumeBalance)
+        public SalaryAccount(double consumeBalance)
         {
-            AccountNumber = accountNumber;
+            AccountNumber = Guid.NewGuid().GetHashCode();
             Balance = consumeBalance;
         }
+
+
+
     }
 
 }

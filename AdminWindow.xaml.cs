@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
+using NewWPFBank.Classes;
 
 namespace NewWPFBank
 {
@@ -12,6 +14,30 @@ namespace NewWPFBank
         public AdminWindow() // Flyttar alla variabler /objekt hit till AdminWindow så man kan se dom.
         {
             InitializeComponent();
+
+            // Lista
+            List<IAccount> accounts = new();
+            // Foreach varje user
+            foreach (User user in UserManager.Users) // Loopa genom statisk lista
+            {
+                foreach (IAccount account in user.Accounts)
+                {
+                    accounts.Add(account);
+
+
+                }
+
+            }
+            lstAllAccounts.ItemsSource = accounts;
+            // Foreaach varje account
+
+
+
+
+            // Displaya dom i lstAllAccounts
+
+
+
 
 
         }

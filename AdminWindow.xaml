@@ -36,12 +36,9 @@
            Name="lstAllAccounts">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="30" Header="Id" DisplayMemberBinding="{Binding Id}"/>
-                    <GridViewColumn Width="100" Header="Account Number" DisplayMemberBinding="{Binding AccountNumber}"/>
-                    <GridViewColumn Width="80" Header="Balance" DisplayMemberBinding="{Binding Balance}"/>
-                    <GridViewColumn Width="90" Header="Salary" DisplayMemberBinding="{Binding Salary}"/>
-                    <GridViewColumn Width="50" Header="Savings" DisplayMemberBinding="{Binding Savings}"/>
-
+                    <GridViewColumn Width="200" Header="Balance" DisplayMemberBinding="{Binding Balance}"/>
+                    <GridViewColumn Width="Auto" Header="Account Number" DisplayMemberBinding="{Binding AccountNumber}"/>
+                  
                 </GridView>
             </ListView.View>
         </ListView>
